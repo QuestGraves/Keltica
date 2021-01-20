@@ -1,0 +1,3 @@
+[submodule "Keltica/vendor/spdlog"]
+	path = Keltica/vendor/spdlog
+	url = https://github.com/gabime/spdlog
