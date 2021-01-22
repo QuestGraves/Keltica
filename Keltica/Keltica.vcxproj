@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Keltica\Log.h" />
+    <ClInclude Include="src\Keltica\Core.h" />
     <ClInclude Include="src\Keltica.h" />
     <ClInclude Include="src\Keltica\Application.h" />
-    <ClInclude Include="src\Keltica\Core.h" />
     <ClInclude Include="src\Keltica\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Keltica\Log.cpp" />
     <ClCompile Include="src\Keltica\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -67,8 +69,11 @@
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <PreprocessorDefinitions>KT_PLATFORM_WINDOWS;KT_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>KELT_PLATFORM_WINDOWS;KELT_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Keltica\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <PreprocessToFile>false</PreprocessToFile>
+      <AssemblerOutput>NoListing</AssemblerOutput>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -82,8 +87,11 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <PreprocessorDefinitions>KT_PLATFORM_WINDOWS;KT_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>KELT_PLATFORM_WINDOWS;KELT_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Keltica\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <PreprocessToFile>false</PreprocessToFile>
+      <AssemblerOutput>NoListing</AssemblerOutput>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

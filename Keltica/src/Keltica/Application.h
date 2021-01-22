@@ -1,17 +1,20 @@
 #pragma once
 
 #include "Core.h"
+#define KELTICA_API __declspec(dllexport)
 
 namespace Keltica {
 
-  class __declspec(dllexport) Application //TODO: KELTICA_API; figure out why your macro isn't working 
+  class KELTICA_API Application 
   {
   public:
 
     Application();
     virtual ~Application();
-
+    
     void Run();
+
+
 
   };
   //To be defined in Client

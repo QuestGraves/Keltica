@@ -1,6 +1,7 @@
 #include "Application.h"
 #include <stdio.h>
 
+
 namespace Keltica {
 
 
@@ -11,12 +12,17 @@ namespace Keltica {
 
   Application::~Application()
   {
-    printf("Destroyed");
+   printf("Destroyed");
   }
 
   void Application::Run()
   {
-    while (true);
+
+      printf(" Started Application....");
+ 
+
+
+      while (true);
   }
 }
 

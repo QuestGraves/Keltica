@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Keltica\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Keltica\Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -27,9 +24,18 @@
     <ClInclude Include="src\Keltica\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Keltica\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Keltica\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Keltica\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Keltica\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

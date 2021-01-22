@@ -2,7 +2,8 @@
 
 
 
-#ifdef KT_PLATFORM_WINDOWS
+#ifdef KELT_PLATFORM_WINDOWS
+
 
 extern Keltica::Application* Keltica::CreateApplication();
 
@@ -10,13 +11,18 @@ extern Keltica::Application* Keltica::CreateApplication();
 
 int main(int arc, char** argv)
 {
-  for (int i = 0; i < 20; i++) printf("*");
-  printf("Welcome to Keltica Engine");
-  for (int i = 0; i < 20; i++) printf("*");
+  Keltica::Log::Init();
+  KELT_CORE_WARN("...Initializing logger");
+  KELT_CORE_INFO("Initialized logger Party on Dude!");
+  KELT_CORE_INFO("Welcome to Keltica Engine!\n");
+
   auto app = Keltica::CreateApplication();
   app->Run();
   delete app;
-  return 0;
+
 }
 
-#endif
+
+
+#endif // KLT_PLATFORM_WINDOWS
+
